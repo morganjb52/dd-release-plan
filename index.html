@@ -8,7 +8,9 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +18,256 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Jeff Slide</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					<textarea data-template>
+						
+						#### Exercise 4:
+						
+						## WidgetSpinner Release Plan
+
+						### Jeff Morgan
+						
+					</textarea>
+				</section>
+				<section>
+				<section data-markdown>
+					<textarea data-template>
+					### Assumptions
+					The plan assumes:
+					* Implementation beginning on January 7, 2025
+					* Reasonable work capacity for all team members. 
+						* Including overhead time, feedback implementation, planned and brief unplanned absence, and other tasks, capacity per writer is assumed to be 30 hours per week.
+					* 1 day for peer review and 3 days for technical review.
+					* A sprint-based cadence.
+						* For relative estimation purposes, I am assuming a capacity of 5 to 6 points per writer, per sprint.
+					</textarea>
+					</section>
+					<section data-markdown>
+					<textarea data-template>
+						### Dependencies
+						* Plan delivery is dependent upon availability of engineers and product managers for queries.
+						* Plan delivery is dependent upon reasonably prompt fulfillment of reviews from colleagues, including peer review and technical review.
+							* The plan does build in some time and flexibility to account for the realities of delayed review.
+					</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Risks
+							* Extended unplanned unavailability of team members may put the delivery timeline at risk.
+							* Major, unforeseen feature changes following the release of the public beta may put the post-beta timeline and scope at risk.
+						</textarea>
+						</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### General plan approach
+						The release plan includes 3 major phases of content delivery, with each phase iterating on an initial documentation MVP. 
+						
+						Each phase corresponds with a sprint, so two phases are planned for delivery prior to the date of public beta release, and the third is planned for delivery after that date.
+
+						The next slides include a timeline overview, followed by a more detailed explanation of the reasoning behind prioritization, writer assignment, and task scoping.
+						</textarea>
+						</section>
+						<section>
+						<section data-markdown>
+							<textarea data-template>
+						#### Phase 1/MVP: Introductory and get started content | Jan 7 - Jan 20
+
+						**Timeline and assignees**
+
+						<small>
+
+						| Date       | Task                                      | Assignee        | Points |
+						|------------|-------------------------------------------|------------------|--------|
+						| Jan 9      | Landing page                              | Amelia           | 2      |
+						| Jan 10     | Security platform overview updates        | Sherlock Bones   | 2      |
+						| Jan 11     | OOTB Detection rules (must be open source by Jan 29)                     | Jeff             | 2      |
+						| Jan 15     | Quick start                               | Amelia           | 3      |
+						| Jan 15     | Guides / How WidgetSpinner Security works | Sherlock Bones   | 3      |
+						| Jan 15     | Setup and Configuration – Exclusion filters | Jeff           | 3      |
+						
+						</small>
+							
+
+						</textarea>
+						</section>
+						<section data-markdown>
+							<textarea data-template>
+						#### Phase 2: Scenarios and advanced configuration | Jan 21 - Feb 3
+
+						**Timeline and assignees**
+
+						<small>
+
+						| Date       | Task                                            | Assignee        | Points |
+						|------------|-------------------------------------------------|------------------|--------|
+						| Jan 24     | Troubleshooting page – initial scenarios     | Amelia           | 2      |
+						| Jan 24     | Setup and Configuration – Writing custom signal rules     | Jeff     | 3    |
+						| Jan 24     | Setup and Configuration – Sensitive data scanner | Sherlock Bones     | 3    |
+						| Jan 29     | Setup and Configuration – Disable WidgetSpinner Security  | Jeff     | 3    |
+						| Jan 29     | Setup and Configuration – Compatibility of W.S. Sec with tech  | Sherlock Bones     | 3    |
+						| Jan 29     | APM > Connect WidgetSpinner with Traces          |  Amelia      |   3    |
+
+						**Milestone: Feb 3 - Public beta release**
+						
+						</small>
+							</textarea>
+							</section>
+							<section data-markdown>
+								<textarea data-template>
+						#### Phase 3: Workflows and advanced troubleshooting | Feb 4 - Feb 17
+
+						**Timeline and assignees**
+						
+						<small>
+						Tasks and scoping for this phase will be refined further based on identified needs following the public beta release.
+
+
+						| Date       | Task                                            | Assignee        | Points |
+						|------------|-------------------------------------------------|------------------|--------|
+						| Feb 10  | Feature W.S. Security in APM setup instructions | Sherlock | 5   |
+						| Feb 11     | Security Monitoring Guides     | Jeff     | 5   |
+						| Feb 11   | Troublshooting - additional scenarios | Amelia   | 5    |
+						
+						</small>
+					</textarea>
+					</section>
+				</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Decisions and rationale
+
+							The remaining slides discuss my rationale for prioritization and task assignment.
+						</textarea>
+					</section>
+					<section>
+					<section data-markdown>
+						<textarea data-template>
+							#### Phase 1/MVP: Introductory and get started content
+							
+							* **Landing page - Amelia:** 
+								* As someone new to technical writing but deeply knowledgable in the product, the landing page is well-suited to Amelia. 
+							
+								* Amelia is equipped to describe the use case and general workflow, and this task will help Amelia become acclimated to the tools and workflows that the team uses to publish content.
+
+								* The landing page acts as a signpost, overview, and navigation tool, and has been prioritized accordingly as part of the MVP.
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							#### Phase 1/MVP: Introductory and get started content
+
+							* **Security Platform Overview - Sherlock:** 
+								* Although Sherlock is not as familiar with the product, the task of adding a brief WidgetSpinner outline to the Security Overview summary page will help him begin to understand the tool, its use case, and its greater context more deeply.
+
+								* This task is prioritized for the documentation MVP because it is a useful introductory task for the writer, and because it will help users to find the new feature more easily.
+						</textarea>
+						</section>
+					<section data-markdown>
+						<textarea data-template>
+							#### Phase 1/MVP: Introductory and get started content
+
+							* **OOTB Detection rules - Jeff:** 
+								* OOTB instructions are an excellent candidate for early-phase documentation, since this content is likely to cover broad use cases for general users. 
+								
+								* As a writer still relatively new to the company and the product, this task will help Jeff learn core use cases before delving into more custom and advanced configurations.
+						</textarea>
+						</section>
+						<section data-markdown>
+							<textarea data-template>
+								#### Phase 1/MVP: Introductory and get started content
+	
+								* **Quick Start - Amelia:** 
+									* Through this task, Amelia can upskill on the more detailed technical aspects of using the tool, while still leveraging her product knowledge. 
+									
+									* Because this is similar to the existing APM setup page, Amelia will have a model page to work from. 
+									
+									* Installation instructions are a critical component for users to begin gaining value from the tool, and are prioritized to be part of the MVP as such.
+							</textarea>
+							</section>
+						<section data-markdown>
+							<textarea data-template>
+								#### Phase 1/MVP: Introductory and get started content
+	
+								* **Guides/How WidgetSpinner Security works - Sherlock:** 
+									* As an experienced technical writer, Sherlock will be able to accomplish this more technical task while continuing to upskill on the WidgetSpinner product. 
+									
+									* This section is prioritized above others so that we have content ready to help drive adoption of the tool by an audience that has proven skeptical in the past.
+							</textarea>
+						</section>
+						<section data-markdown>
+							<textarea data-template>
+								#### Phase 1/MVP: Introductory and get started content
+	
+								* **Setup and Configuration - Exclusion filters - Jeff:** 
+									* The broader Setup and Configuration section will require extensive resource time to deliver, and while this section is not critical to a documentation MVP, Jeff will have capacity to complete this task in this sprint to get started with this section.
+							</textarea>
+							</section>
+							</section>
+							<section>
+							<section data-markdown>
+								<textarea data-template>
+									#### Phase 2: Scenarios and advanced configuration
+		
+									* **Troubleshooting page - initial scenarios - Amelia:** 
+										* Amelia's background in support makes her a perfect fit for this task. 
+										* The troubleshooting page will continue to be iteratively built out as the tool becomes more widely used, but this initial task will ensure that early adopters are able to easily address common issues that we have identified to date.
+								</textarea>
+								</section>
+							<section data-markdown>
+								<textarea data-template>
+									#### Phase 2: Scenarios and advanced configuration
+		
+									* **Setup and configuration pages - Sherlock and Jeff:** 
+										* Sherlock and Jeff will leverage their technical backgrounds to build out the remainder of the advanced setup and configuration pages in this sprint so that we will have documentation available to support the enterprise-readiness of the product out of the gate.
+								</textarea>
+								</section>
+								<section data-markdown>
+									<textarea data-template>
+										#### Phase 2: Scenarios and advanced configuration
+			
+										* **APM > Connect WidgetSpinner with Traces - Amelia:** 
+											* This task will help Amelia to continue upskilling in more technically detailed writing. 
+											* Because this page is inspired by *Logs, Synthetics and RUM* in the APM section, Amelia will have a model page to reference as she creates this one. 
+											* Completing this task in this sprint ensures that P0 reference docs are available at the time of the public beta launch.
+									</textarea>
+									</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							#### Phase 3: Workflows and advanced troubleshooting
+
+							* **Feature WidgetSpinner Security in APM setup instructions - Sherlock:** 
+								* Sherlock will identify the best way to integrate WidgetSpinner Security content in the APM setup instructions.
+								* This task may involve additional scoping to determine how to keep the APM page digestible and usable as we continue to propose adding more content to it.
+						</textarea>
+						</section>
+						<section data-markdown>
+							<textarea data-template>
+								#### Phase 3: Workflows and advanced troubleshooting
+	
+								* **Security Monitoring Guides - Jeff:** 
+									* Jeff will create a new guide about Monitoring Log4shell exploit attempts.
+									* This task, as scoped, covers one new guide, but may lead to additional guides as described in the brief.							
+							</textarea>
+							</section>
+							<section data-markdown>
+								<textarea data-template>
+									#### Phase 3: Workflows and advanced troubleshooting
+		
+									* **Troubleshooting - additional scenarios - Amelia:** 
+										* Amelia will continue to leverage her support expertise by building out additional troubleshooting content based on scenarios identified post-release.					
+								</textarea>
+								</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+					# Thank you!
+					#### Jeff Morgan
+					#### <a href="mailto:morganjb@gmail.com">morganjb@gmail.com</a>
+					</textarea>
+				</section>
 			</div>
 		</div>
 
